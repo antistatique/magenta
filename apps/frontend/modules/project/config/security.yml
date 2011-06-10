@@ -1,0 +1,42 @@
+# Security management for the contact module ...
+# 3 types of users :
+# - "admin" for the administrator whose having all the rights
+# - "icollab" for the internal collaborators whose having most of the rights (except deleting)
+# - "ecollab" for the external collaborators whose have access to the informations for the project is working on.
+# - "can_admin_project"
+# - "can_project_modify"
+# - "can_project_view"
+# - "can_project_view_all"
+# - "can_workflow_admin"
+# - "can_workflow_modify"
+
+all:
+  is_secure: true
+  credentials: admin
+  
+edit:
+  credentials: [[ admin, icollab]]
+addAjaxProjectEmployee:
+  credentials: [[ admin, icollab]]  
+index:
+  credentials: [[ admin, icollab, ecollab]]
+list:
+  credentials: [[ admin, icollab, ecollab]]
+search:
+  credentials: [[ admin, icollab, ecollab]]  
+detail:
+  credentials: [[ admin, icollab, ecollab]]
+show:
+  credentials: [[ admin, icollab, ecollab]]
+preview:
+ credentials: [[ admin, icollab, ecollab]]  
+editWorkflow:
+  credentials: [[ admin, icollab]]
+deleteWorkflow:
+  credentials: [[ admin, icollab]]
+taskAsDone:
+  credentials: [[ admin, icollab, ecollab]]
+listWorkflow:
+  credentials: [[ admin, icollab, ecollab]]
+changeStatusProject:
+  credentials: [[ admin, icollab ]]

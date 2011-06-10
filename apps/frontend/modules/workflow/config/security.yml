@@ -1,0 +1,12 @@
+all:
+  is_secure: true
+  credentials: admin
+
+edit:
+  credentials: [[ admin, icollab]]
+list:
+  credentials: [[ admin, icollab, ecollab]]
+delete:
+  credentials: [[ admin, icollab]]
+taskAsDone:
+  credentials: [[ admin, icollab, ecollab]]

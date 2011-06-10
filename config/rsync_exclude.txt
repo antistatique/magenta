@@ -1,0 +1,8 @@
+.svn
+.git
+.DS_Store
+/web/uploads/*
+/cache/*
+/log/*
+config/databases.yml
+/web/*_dev.php

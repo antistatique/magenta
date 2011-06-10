@@ -1,0 +1,1186 @@
+   html{
+      height:100%;
+      margin:0;
+      padding:0;
+   }
+   body{
+      height:100%;
+      margin:0;
+      padding:0;
+      background-color:#FFFFFF;
+      font: 9pt Tahoma, Verdana, sans-serif;       
+   }
+   img{
+      border:none;
+   }
+   #centreur{
+      width:972px;
+      margin:0 auto 0 auto;
+      position: relative;
+   }
+   #header{
+      padding:20px 0 10px 0;
+      width:972px;
+      height:152px;
+   }
+   #logo{
+      width:182px;
+      height:116px;
+      float:left;
+   }
+   /******************************************/
+   /* Menu                                   /
+   /******************************************/    
+   #menu{
+      margin:61px 0 0 0;
+      float:left;
+      width:790px;
+      height:42px;
+      background: url('../images/menu_fnd_main.gif') 0 0 no-repeat;
+      padding:13px 0 0 0;
+   }
+   #menu ul{
+      list-style: none;
+      margin:0;
+      padding:0;
+   }
+   #menu ul li{
+      display:block;
+      float:left;
+      margin:0px 3px 0px 0px;
+      background: none;
+   }
+   #menu ul li a{
+      background: none;
+      display:block;
+      /*margin:13px 6px 0px 6px;*/
+      padding:15px 12px 12px 0px;
+      height:29px;
+      text-decoration:none;
+      color:#323230;
+   }
+   #menu ul li:hover{
+      background: url('../images/menu_btn_dr_fnd.gif') 0 0 no-repeat;         
+   }
+   #menu ul li a:hover{
+      background: url('../images/menu_btn_ga_fnd.gif') 100% 0 no-repeat;
+      text-shadow: #323230 0px 0px 1px;         
+   }
+   #menu ul li.currentli{
+      background: url('../images/menu_btn_dr_fnd.gif') 0 0 no-repeat;         
+   }
+   #menu ul li.currentli a{
+      background: url('../images/menu_btn_ga_fnd.gif') 100% 0 no-repeat;
+      text-shadow: #323230 0px 0px 1px;         
+   }     
+   #menu ul li .menuitem{
+      padding:15px 10px 12px 50px;  
+   }
+   #menu ul li .client{
+      background: url('../images/menu_ico_contacts.png')  7px 5px no-repeat;
+   }
+   #menu ul li .dashboard{
+      background: url('../images/menu_ico_dashboard.png')  7px 5px no-repeat;
+   }   
+   #menu ul li .mandat{
+      background: url('../images/menu_ico_mandats.png')  7px 5px no-repeat;
+   }
+   #menu ul li .collaborateur{
+      background: url('../images/menu_ico_contacts.png')  7px 5px no-repeat;
+   }
+   #menu ul li .svn{
+      background: url('../images/menu_ico_todo.png')  7px 5px no-repeat;
+   } 
+   #menu ul li .trac{
+      background: url('../images/menu_ico_trac.png')  7px 5px no-repeat;
+   }                
+   /******************************************/
+   /* Sous menu                              /
+   /******************************************/    
+   #sousmenu{
+      float:left;
+      width:750px;
+      height:35px;
+      margin:0 0 0 182px;
+      background: url('../images/menu_sous_fnd.gif') 0 0 no-repeat;
+      
+   }
+   #sousmenu ul{
+      list-style: none;
+      margin:0 6px 0 0;
+      padding:0;
+   }
+   #sousmenu ul li{
+      display:block;
+      float:left;
+      margin:0px 3px 0px 0px;
+      background: url('../images/menu_sous_verti_ligne.gif') 100% 6px no-repeat;
+
+   }
+   #sousmenu ul li a.sousmenuitem{
+      display:block;
+      padding:11px 16px 12px 30px;
+      text-decoration:none;
+      color:#323230;
+      background-position: 3px 4px;
+      background-repeat: no-repeat;
+      }
+   #sousmenu ul li a.sousmenuitem:hover{
+      color:#323230; 
+      text-shadow: #323230 0px 0px 1px;
+   }        
+   #sousmenu ul li a.ajoutercontact, #detailmenu ul li a.ajoutercontact{
+      background-image: url('../images/menu_sous_add_people_off.png');  
+   }
+   #sousmenu ul li a.ajoutercontact:hover, #detailmenu ul li a.ajoutercontact:hover;{
+      background-image: url('../images/menu_sous_add_people_on.png');
+   }     
+   #sousmenu ul li a.ajoutercompany{
+      background-image: url('../images/menu_sous_add_company_off.png');  
+   }
+   #sousmenu ul li a.ajoutercompany:hover{
+      background-image: url('../images/menu_sous_add_company_on.png');
+   }  
+   a.tracicone{
+      background-image: url('../images/menu_sous_trac_off.png');            
+   }
+   a.tracicone:hover{
+      background-image: url('../images/menu_sous_trac_on.png');            
+   }
+   a.ajoutertache{
+      background-image: url('../images/menu_sous_add_task_off.png');      
+   }  
+   a.ajoutertache:hover{
+      background-image: url('../images/menu_sous_add_task_on.png');      
+   }      
+   a.ajoutermandat{
+      background-image:url('../images/menu_sous_add_mandat_off.png');
+   }
+   a.ajoutermandat:hover{
+      background-image:url('../images/menu_sous_add_mandat_on.png');
+   }   
+   a.listermandat{
+      background-image:url('../images/menu_sous_list_mandat_off.png');
+   }
+   a.listermandat:hover{
+      background-image:url('../images/menu_sous_list_mandat_on.png');
+   }   
+   #sousmenu ul li a.importer, #detailmenu ul li a.importer{
+      background-image: url('../images/menu_sous_import_off.png');   
+   }
+   #sousmenu ul li a.importer:hover, #detailmenu ul li a.importer:hover{
+      background-image: url('../images/menu_sous_import_on.png');
+   }           
+   
+   /******************************************/
+   /* Search Form                            /
+   /******************************************/
+   #searchformblock{
+      float:left;
+      margin:0 0 0 6px;
+   }
+   #searchform {
+      margin: 6px 0 0 0px;
+      padding: 0;
+   }
+   #searchform fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+   }
+   #searchform label { 
+      color: #999; 
+      display: none; 
+   }
+   #searchform input { 
+      width: 130px; 
+      color: #222; 
+   }
+   #searchform #submitquery { 
+      display: none; 
+   }
+   /******************************************/
+   /* Contenu                                /
+   /******************************************/
+   #contenu{
+      float:left; 
+      width:972px;
+   }
+
+   /******************************************/
+   /* dashboard                               /
+   /******************************************/    
+   #employee_select{
+      position:absolute;
+      top:-4px;
+      right:5px;
+   }
+   #detailcontent_w .liste_titre h2{
+      position:relative;
+   }
+   /******************************************/
+   /* Label (bloc gauche, filtre)            /
+   /******************************************/    
+   #label{
+      float:left;
+      width:170px;   
+      margin:2px 0 0 0;    
+   }
+   #label ul#filtremenu {
+      list-style: none;
+      margin:0 6px 0 0;
+      padding:0;        
+   }
+   #label ul#filtremenu li{
+      color:#929292; 
+      position:relative;
+      border-bottom:1px #e5e5e5 solid;       
+   }
+   #label ul#filtremenu li i{
+      position:absolute;
+      right:0;
+      top:0;
+      text-align:right;
+      width:15px;
+      font-style: normal;
+      font-size: 8pt;         
+      margin:2px 0 0 0;
+      padding:0;
+   }  
+   #label ul#filtremenu li a, .status_project_text{
+      color:#929292;
+      text-decoration:none;
+      padding:4px 0 4px 17px;
+      line-height:1.7em;
+      background-position: 0 7px;
+      background-repeat: no-repeat;
+   }
+   #label ul#filtremenu li a:hover{
+      text-decoration:underline;
+   }
+   #label ul#filtremenu li a.type_all{
+      background-image: url('../images/pastille_type_all.gif');
+   }     
+   #label ul#filtremenu li a.type_client, li a.type_collaborator_intern{
+      background-image: url('../images/pastille_type_client.gif');
+   }
+   #label ul#filtremenu li a.type_contact, li a.type_collaborator_extern{
+      background-image: url('../images/pastille_type_contact.gif');
+   }     
+   #label ul#filtremenu li a.type_partenaire, li a.type_admin_type{
+      background-image: url('../images/pastille_type_partenaire.gif');
+   }
+   #label ul#filtremenu li a.type_fournisseur{
+      background-image: url('../images/pastille_type_fournisseur.gif');
+   }
+   #label ul#filtremenu li a.filtreitem0, .filtreitem0{
+      background-image: url('../images/pastille_status_0.gif');
+   }   
+   #label ul#filtremenu li a.filtreitemactive{
+      background-image: url('../images/pastille_status_active.gif');
+   }     
+   #label ul#filtremenu li a.filtreitem1, .filtreitem110, .filtreitem120, .filtreitem130, .filtreitem140{
+      background-image: url('../images/pastille_status_1.gif');
+   }
+   #label ul#filtremenu li a.filtreitem2, .filtreitem150, .filtreitem160{
+      background-image: url('../images/pastille_status_2.gif');
+   }     
+   #label ul#filtremenu li a.filtreitem3, .filtreitem170, .filtreitem180{
+      background-image: url('../images/pastille_status_3.gif');
+   }
+   #label ul#filtremenu li a.filtreitem4, .filtreitem330, .filtreitem340{
+      background-image: url('../images/pastille_status_4.gif');
+   }
+   #label ul#filtremenu li a.filtreitem5, .filtreitem310, .filtreitem320{
+      background-image: url('../images/pastille_status_5.gif');
+   }
+   #label ul#filtremenu li a.filtreitem6, .filtreitem200, .filtreitem210{
+      background-image: url('../images/pastille_status_6.gif');
+   }
+   .status_110, .status_120, .status_130, .status_140{/*jaune*/
+      color:#DFD12C;
+   }
+   .status_150, .status_160{/*vert*/
+      color:#56f64a;
+   }
+   .status_170, .status_180, .status_190{/*vert_fonce*/
+      color:#42a229;
+   }
+   .status_330, .status_340{/*rouge*/
+      color:#ff0000;
+   }
+   .status_310, .status_320{/*orange*/
+      color:#ffb400;
+   }
+   .status_200, .status_210{/*gris*/
+      color:#666;
+   }   
+   
+   .ico_type_client, .ico_type_collaborator_intern{
+      background-image:url('../images/ico_contact_type_client.gif');
+   }
+   .ico_type_contact, .ico_type_collaborator_extern{
+      background-image:url('../images/ico_contact_type_contact.gif');
+   }                        
+   .ico_type_partenaire, .ico_type_admin_type{    
+      background-image:url('../images/ico_contact_type_partenaire.gif');
+   }                        
+   .ico_type_fournisseur{   
+      background-image:url('../images/ico_contact_type_fournisseur.gif');
+   }
+     
+   .ico_mandat_st_110, .ico_mandat_st_120, .ico_mandat_st_130, .ico_mandat_st_140{
+      background-image:url('../images/ico_project_st_1.png');
+   }
+   .ico_mandat_st_150, .ico_mandat_st_160{
+      background-image:url('../images/ico_project_st_2.png');
+   }
+   .ico_mandat_st_170, .ico_mandat_st_180, .ico_mandat_st_190{
+      background-image:url('../images/ico_project_st_3.png');
+   }
+   .ico_mandat_st_330, .ico_mandat_st_340{
+      background-image:url('../images/ico_project_st_4.png');
+   }
+   .ico_mandat_st_310, .ico_mandat_st_320{
+      background-image:url('../images/ico_project_st_5.png');
+   }
+   .ico_mandat_st_, .ico_mandat_st_200, .ico_mandat_st_210{
+      background-image:url('../images/ico_project_st_6.png');
+   }   
+               
+   .ico_workflow_task{
+
+      background-image:url('../images/ico_workflow_task.png');
+   }
+   .ico_workflow_task_cancel{
+      background-image:url('../images/ico_workflow_task_plan.png');
+   }
+   .ico_workflow_task_done{
+      background-image:url('../images/ico_workflow_task_done.png');
+   }
+   .ico_workflow_task_plan{
+      background-image:url('../images/ico_workflow_task_cancel.png');
+   }    
+   .ico_workflow_task_system{
+      background-image:url('../images/ico_workflow_task_auto.png');
+   }   
+        
+      
+   .icostatus1{
+      background-image:url('../images/ico_people_st_1.gif');
+   }
+   .icostatus2{
+      background-image:url('../images/ico_people_st_2.gif');
+   }
+   .icostatus3{
+      background-image:url('../images/ico_people_st_3.gif');
+   }
+   .icostatus4{
+      background-image:url('../images/ico_people_st_4.gif');
+   }
+   .icostatus5{
+      background-image:url('../images/ico_people_st_5.gif');
+   }
+   .icostatus6{
+      background-image:url('../images/ico_people_st_6.gif');
+   }     
+   /******************************************/
+   /* Liste                                  /
+   /******************************************/                         
+   #liste{
+      float:left;    
+      margin:2px 13px 0 13px;
+      padding:2px 1px 2px 3px;
+      border: 1px solid #e5e5e5;
+      width:320px;
+      background:#FFFFFF url('../images/blocs_fnd.gif') repeat-x 0 100%;
+   }
+   
+   #liste.workflowlist{
+      margin:2px 0 0 0;
+      padding:2px 0 0 0;
+   }
+   #liste.workflowlist2{
+      margin:2px 0 0 8px;
+      padding:2px 0 0 0;
+   }   
+   #liste.large{
+      width:782px;
+      margin-right:0px;
+   }
+   
+   #liste ul{
+      list-style: none;
+      margin:0px 0 0 0;
+      padding:0;        
+   }
+   #liste.workflowlist ul{
+      padding:0 0px 0 1px;
+   }
+   #liste ul li{
+      border-top:1px #f7f7f7 solid;
+      border-bottom:1px #ececec solid;
+      float:left;
+      width:318px;
+      color:#929292;
+      font-size:8pt;
+   }
+   #liste.large ul li{
+      width:780px;
+   }   
+   
+   #liste ul li:hover, #liste ul li[selected]{
+      background-color:#f5f5f5;
+   }     
+   #liste ul li .listeitemarrow{
+      font-size:7.5pt;     
+      color:#b0b0b0;
+      padding:0 0 0 8px;
+      background:url('../images/ico_arrow.gif') 0 3px no-repeat;  
+   }
+   #liste ul li .listeitemfade{
+      font-size:7.5pt;     
+      color:#b0b0b0;    
+   }
+   #liste ul li a{
+      color:#5592e1;
+      text-decoration:none;
+   }
+   #liste ul li a:hover{
+      text-decoration:underline;
+   }
+   
+   #liste ul li.first{
+      border-top:none;
+   }
+   
+   #liste ul li > div{
+      margin:5px 0px 5px 0px;
+   }
+   #liste div.liste1c{
+      float:left;
+      width:110px;
+      background-position:0 0;
+      background-repeat:no-repeat;
+      padding:0 0 0 20px;
+      margin-left:4px;
+   }
+   #liste.large div.liste1c{
+      width:140px;
+   }
+   #liste a.titrenolink{
+      text-decoration: none;
+      color:#929292;       
+   }
+   #liste a.titrenolink:hover{
+      text-decoration: underline;
+   }
+      
+   #liste div.liste2c{
+      float:left;       
+      width:80px;       
+   }
+   
+   #liste.large div.liste2c{
+      width:180px;
+   }
+   #liste.liste2colo div.liste2c{
+      text-align:right;   
+      width:180px;
+   }
+   #liste div.liste3c{
+      float:left;       
+      width:100px;      
+   }
+   #liste.large div.liste3c{
+      width:334px;
+   }
+   #liste li.workflow_item div.liste1c{
+      background-position:-2px -4px;      
+      width:200px;
+   }
+   #liste li.workflow_item div.liste3c{
+      width:85px;
+      text-align:right;      
+   }
+   #liste div.liste4c{
+      float:left;       
+      width:100px;
+   }
+   #liste.large div.liste4c {
+      text-align:right;
+   }
+   
+   #liste ul li.workflow_item[selected], #liste ul li.workflow_item[selected]:hover{
+      background-color:#fafafa;
+   }   
+   #liste .show_workflow_detail{
+        border-top:none;
+        margin:0;      
+        float:left;
+        display:none;
+   }
+   #liste .show_workflow_detail p{
+      margin:0 0 10px 10px;
+      background: url('../images/ico_arrow_sub.gif') 0 3px no-repeat;
+      padding:0 0 0 15px;   
+   }
+   #liste .show_workflow_detail .detailmenu, #liste .show_workflow_detail .detailmenu ul{
+      width:318px;
+   }
+   #liste .show_workflow_detail .detailmenu ul li {
+      border-bottom:none;
+      border-top:none;
+      margin:0;
+   }
+   #liste .show_workflow_detail .detailmenu ul li:hover, #liste .detailmenu ul li:hover{
+      background:none;
+      background: url('../images/menu_sous_verti_ligne.gif') 100% 6px no-repeat;      
+   }  
+   
+   
+   #liste.workflowlist .late{
+      background-color:#fff0f0;
+   }
+   #liste.workflowlist .early{
+      
+   }       
+   #liste.workflowlist .today{
+      background-color:#fff3dc;      
+   }   
+
+   .show_projects{
+      display:none;
+      margin-left:5px;
+      float:left;
+      border-top:1px #f7f7f7 solid;
+      width:100%;
+   }
+
+   .show_projects .listeopenc{
+
+   }
+   .show_projects .c1c{
+      float:left;       
+      margin:0 0 0 10px;
+      background: url('../images/ico_arrow_sub.gif') 0 0 no-repeat;
+      padding:0 0 0 15px;
+      width:110px;
+      
+   }  
+   .show_projects .c2c{
+      float:left;
+      width:78px;
+   }
+   .show_projects .c3c{
+      float:left;
+   }
+
+   /******************************************/
+   /* Header de liste                         /
+   /******************************************/ 
+   #liste li.listeheader h2{
+      margin:0;
+      font-weight: normal;
+      font-size: 16px;
+   }
+   #liste ul li.listeheader:hover{
+      background:none;
+   }   
+   #liste li.listeheader .liste4c h2{
+      margin-right:6px;
+   }
+   #liste li.listeheader .liste1c{
+      padding-left:2px;
+      width:158px;
+   }   
+
+
+   /******************************************/
+   /* Footer de liste                         /
+   /******************************************/ 
+   #liste li.listefooter{
+      border-bottom:none;
+   }
+   #liste div.liste2cpages{
+      float:left;       
+      width:140px;
+   }
+   #liste.large div.liste2cpages{
+      width:500px;
+   }         
+   #liste div.liste2cpages ul{
+      text-align: center;      
+   }
+   #liste div.liste2cpages ul li{
+      display: inline;     
+      border:none;
+      background:none;
+      margin:none;
+      float:none;
+      text-decoration:none;
+   }
+   #liste div.liste2cpages ul li b{
+      padding:4px;
+      text-align: center;
+   }
+   #liste div.liste2cpages ul li a{
+      padding:4px;
+      text-align: center;
+   }
+   #liste div.liste2cpages ul li a:hover{
+      background-color: #fff;
+   }  
+   #liste div.liste2cpages ul li a.next{
+      background: url('../images/ico_arrow_next.gif') 0px 50% no-repeat;
+   }
+   #liste div.liste2cpages ul li a.prev{
+      background: url('../images/ico_arrow_prev.gif') 0px 50% no-repeat;      
+   }
+   #liste div.liste2cpages ul li a i{
+      display:none;
+   }
+   #liste div.nbmandat {
+      width:80px;
+      padding:0 0 0 0px;
+   }
+   #liste.large div.liste3c.nbclient{
+      width:80px;         
+   }   
+   #liste div.nbclient{
+      text-align:right;
+      float:right;
+      width:80px;
+      
+   }
+   #liste .detailmenu a, #liste .detailmenu a:hover{
+      color:#000;
+      text-decoration:none;
+   }
+   #liste .detailmenu ul li{
+      width:auto;
+      float:left;
+      clear: none;
+   }
+   #liste ul.trac_highlight li{
+    
+   }
+   #liste ul li.liste_titre,#liste ul li.liste_titre:hover{
+      background-color:#fff;      
+   }
+   .liste_titre h2{
+      font-weight: normal;
+      margin:10px 0 3px 9px;
+   }
+   #liste.trac_list div.liste1c{
+      padding:0 0 0 5px;
+      margin-left:4px;
+   }
+   /******************************************/
+   /*  Detail du contact                      /
+   /******************************************/ 
+   #detail, .detail{
+      float:left;
+/*    display:table-cell;        */
+      margin:2px 0 0 0;
+      border: 1px solid #e5e5e5;       
+      width:446px;
+      background-color: #666666;       
+/*      height:100%;*/
+      background:#FFFFFF url('../images/blocs_fnd.gif') repeat-x 0 100%;   
+   }
+   #detail.detailmandat{
+      margin:2px 13px 0 13px;      
+   }
+   
+   #detailmenu, .detailmenu{
+      height:34px;
+      border-top:1px solid #e5e5e5;    
+      background:#FFFFFF url('../images/menu_sous_fnd_tiny.gif') 0 0 repeat-x;
+   }
+   #detailmenu ul, .detailmenu ul{
+      list-style: none;
+      margin:0 6px 0 0;
+      padding:0;
+   }
+   #detailmenu ul li, .detailmenu ul li{
+      display:block;
+      float:left;
+      margin:0px 3px 0px 0px;
+      background: url('../images/menu_sous_verti_ligne.gif') 100% 6px no-repeat;
+
+   }
+   #detailmenu ul li a.detailmenuitem, .detailmenu ul li a.detailmenuitem{
+      display:block;
+      padding:11px 16px 12px 30px;
+      text-decoration:none;
+      color:#323230;
+      background-position: 3px 4px;
+      background-repeat: no-repeat;
+   }
+   #detailmenu ul li a.detailmenuitem:hover, .detailmenu ul li a.detailmenuitem:hover{
+      color:#323230; 
+      text-shadow: #323230 0px 0px 1px;
+   }        
+   a.add{
+      background-image: url('../images/menu_sous_add_off.png');   
+   }
+   a.add:hover{
+      background-image: url('../images/menu_sous_add_on.png');
+   }
+   a.modifier{
+      background-image: url('../images/menu_sous_modify_off.png');   
+   }
+   a.modifier:hover{
+      background-image: url('../images/menu_sous_modify_on.png');
+   }        
+   a.remove{
+      background-image: url('../images/menu_sous_remove_off.png');
+   }
+   a.remove:hover{
+      background-image: url('../images/menu_sous_remove_on.png');
+   }     
+   a.exportvcard{
+      background-image: url('../images/menu_sous_add_vcard_off.png');
+   }
+   a.exportvcard:hover{
+      background-image: url('../images/menu_sous_add_vcard_on.png');
+   }   
+   a.modifier_tache{
+      background-image: url('../images/menu_sous_tick_task_off.png');
+   }
+   a.modifier_tache:hover{
+      background-image: url('../images/menu_sous_tick_task_on.png');      
+   }
+   a.back{
+      background-image: url('../images/menu_sous_back_off.png');
+   }
+   a.back:hover{
+      background-image: url('../images/menu_sous_back_on.png');
+   }     
+   a.modifierstatus{
+      background-image: url('../images/menu_sous_projetstatus_off.png');
+   }
+   a.modifierstatus:hover{
+      background-image: url('../images/menu_sous_projetstatus_on.png');
+   }   
+   
+   #detailcontent{
+      clear:both;
+   }
+   #detailcontent hr{
+      border:1px solid #555;
+      margin-right:10px;
+   }
+   #personphoto{
+      float:left;
+      width:48px;
+      height:48px;
+      margin:0px 0 0 20px;
+   }
+   #personinfo{
+      margin: 15px 20px 15px 80px;
+   }
+   #personinfo p{
+      margin:0;
+      padding:0;
+   }
+   #personinfo p.persontext{
+      color:#a8a8a8;
+   }
+   
+   #personinfo p.persontitre{
+      color:#323230;
+      font-size: 30px;
+   }
+   #personinfo p.persontextfin{
+      color:#a8a8a8;
+   }
+   
+   #personinfo ul, .detailcontent ul{
+      margin:30px 0 0 0;
+      padding:0;
+      color:#323230;    
+   }
+   #personinfo ul li, .detailcontent ul li{
+      /*margin:5px 0 5px 0;*/
+      list-style: none;
+      clear:both;
+   }
+   #personinfo ul li dl dt, .detailcontent ul li dl dt{
+      float:left;
+      width:100px;
+      color:#a8a8a8;
+      padding:2px 0 2px 0;
+   }
+   #personinfo ul li dl dd, .detailcontent ul li dl dd{
+      width:200px;
+      margin:0 0 0 100px;
+      padding:2px 0 2px 0;
+   }
+   #personinfo a{
+      color:#5592e1;
+      text-decoration:none;
+   }
+   #personinfo a:hover{
+      text-decoration:underline;
+   }
+   
+   #detailcontent .titre{
+      color:#323230;
+      font-size: 30px;
+   }
+   
+   /********** Mandat ************/
+   #detail h2{
+      color:#323230;
+      font-size: 30px;
+      font-weight: normal;      
+      margin-top:10px;  
+      margin-bottom:0;    
+   }
+   #detail a{
+      color:#5592e1;
+      text-decoration:none;
+   }
+   #detail a:hover{
+      text-decoration: underline;
+   }
+   #detail a.sous_titre_lien{
+      
+   }
+   #detail .itemfade{
+      color:#b0b0b0;      
+   }
+   #detail .detailcontent{
+      padding-left:10px;
+   }
+   
+   /*************************************************/
+   /* Detail du  mandat changement rapide de statut  /
+   /*************************************************/   
+   #action_quick_status_project_change{
+      
+   }
+   #action_quick_status_project_change p{
+      margin:0;
+      padding:6px 0;
+   }   
+   #action_quick_status_project_change p input[type=submit]{
+      margin-right:8px;
+   }
+   
+
+   /******************************************/
+   /* Footer                                 /
+   /******************************************/ 
+   #footer{
+      float:left;
+      clear:both;
+      margin:20px 0 50px 183px;
+      padding:2px 1px 2px 3px;
+      width:782px;
+      height:32px;
+      position:relative;
+      border: 1px solid #e5e5e5;
+      background:#FFFFFF url('../images/blocs_fnd.gif') repeat-x 0 100%;
+      
+   }
+   #footer ul{
+      list-style: none;
+      margin:0 6px 0 0;
+      padding:0;
+   }
+   #footer ul li{
+      display:block;
+      float:left;
+      margin:0px 3px 0px 0px;
+      background: url('../images/menu_sous_verti_ligne.gif') 100% 6px no-repeat;
+
+   }
+   #footer ul li a.sousmenuitem{
+      display:block;
+      padding:10px 16px 12px 30px;
+      text-decoration:none;
+      color:#323230;
+      background-position: 3px 4px;
+      background-repeat: no-repeat;
+      }
+   #footer ul li a.sousmenuitem:hover{
+      color:#323230; 
+      text-shadow: #323230 0px 0px 1px;
+   }        
+
+   #footer #magenta_version{
+      position:absolute;
+      top:10px;
+      right:10px;
+      color:#ccc;
+   }
+   /******************************************/
+   /* Bloc de déconnexion                    /
+   /******************************************/ 
+   #session_bloc{
+      width:113px;
+      z-index:900;
+      position:absolute;
+      right:0px;
+      top:-74px;
+      background: url('../images/session_bloc_fnd.png') 0 0 no-repeat; 
+      height:30px;  
+      padding:38px 20px 10px 70px; 
+      cursor: pointer;   
+   }
+   #session_bloc:hover{
+      background-position: 0 -80px;
+   }
+   #session_bloc.just_signed{
+      top:0px;
+   }
+   #session_bloc a {
+      color:#323230;
+      text-decoration: none;
+   }
+   #session_bloc a:hover{
+      text-shadow: #323230 0px 0px 1px;      
+   }
+   
+   
+   /******************************************/
+   /* Message de confirmation et erreur      /
+   /******************************************/ 
+   #message{
+      width:583px;
+      z-index:900;
+      position:absolute;
+      left:182px;
+      top:38px; 
+
+   }
+   #message.success {
+      color:green;
+      background-position: 0 0;
+      height:40px;
+      background-repeat: no-repeat;
+      font: 13px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+      background-image: url('../images/display_message.png');      
+   }
+   #message.info{
+      color:blue;
+      background-position: 0 -40px;      
+      height:40px;
+      background-repeat: no-repeat;
+      font: 13px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+      background-image: url('../images/display_message.png');      
+   }
+   #message.error {
+      color:white;
+      background-position: 0 -80px;      
+      height:40px;
+      background-repeat: no-repeat;
+      font: 13px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+      background-image: url('../images/display_message.png');      
+   }
+   #message h2{
+      margin-left:50px;
+      padding:0;
+      font-size:10pt;
+      font-weight: normal;
+   }
+
+   /******************************************/
+   /* LargeTypeAction                         /
+   /******************************************/
+   #largeTypeAction{
+      width:80%;
+      text-align:center;
+      opacity:0.7;
+      margin:0 10%;
+      background-color:#000;
+      font: 100px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+      z-index:900;
+      position:fixed;
+      left:0%;
+      top:50%;
+      margin-top:-140px; 
+      color:#fff;
+      -webkit-transition: opacity 0.2s linear;
+
+   }
+   #largeTypeAction span{
+      opacity:100%;
+      margin:20px;
+      display:block;
+      font-weight: bold;         
+   }  
+   div#detail .largeTypeAction{
+      cursor: pointer;
+   }
+   div#detail .largeTypeAction:hover{
+      color:#fff;
+      padding:3px 23px 3px 6px;
+      background: #5592e1 url('../images/ico_large_type_action.png') 100% 0 no-repeat;
+   }
+   /*******************************************/
+   /* Formulaires                              /
+   /*******************************************/
+   form{
+      margin-bottom:0;
+   }
+   form ul{
+    
+   }
+   form ul li label {
+      float:left;
+      width:100px;
+      color:#a8a8a8;
+      padding:2px 0 2px 0;
+      margin:3px 0 3px 0px;      
+   }
+   form ul li input {
+      margin:3px 0 3px 0px;
+      padding:2px 0 2px 0;
+   }
+
+   form ul li select, form ul li textarea {
+      margin:3px 0 3px 0px;
+      padding:2px 0 2px 0;
+   }   
+   #personinfo form ul li ul{
+      padding:0;
+      margin:0;
+   }
+   ul.error_list{
+      margin-top:4px;
+      padding:0;
+      margin:0;
+   }
+   ul.error_list li{
+      padding-left:100px;      
+      color:#ff0000;
+   }
+   input.required_field{
+      background-color:#FFEDDD;
+   }
+   label span.required_star{
+      color:#FF3333;
+      padding-left:3px;
+   }
+   ul.radio_list li{
+      float:left;
+      width:auto;
+      clear:none;      
+   }
+   ul.radio_list li input{
+    margin-right:10px;
+   }
+   ul.radio_list li label{
+      width:auto;
+      padding-right:5px;
+   }
+   .bt_form{
+      margin:8px 12px 0px 4px;
+      padding:0;
+   }
+   
+   /*******************************************/
+   /* Markdown styles                          /
+   /*******************************************/
+   textarea.markdownbloc_edit{
+      height:250px;
+      width:414px;
+      font-family: Monaco, courrier, sans-serif;
+      font-size: 8pt;
+   }
+   .markItUp ul li{
+      clear: none;
+   }
+   div.markdownbloc{
+/*      border: 1px solid #999;
+      margin-right:10px;
+      padding:10px;*/
+   }
+   
+   div.markdownbloc h1, div.markdownbloc h2, #detail div.markdownbloc h2{
+      font-weight: normal;
+      page-break-after: avoid;
+      font-size: 19px; 
+      margin: .15em 1em 0.5em 0;
+      border-bottom:1px solid #ccc;
+   }
+   div.markdownbloc h2, #detail div.markdownbloc h2 {
+      font-size: 14px;
+   }
+   /* Link styles */
+   div.markdownbloc :link, div.markdownbloc :visited {
+    text-decoration: none;
+    color: #b00;
+    border-bottom: 1px dotted #bbb;
+   }
+   div.markdownbloc :link:hover, div.markdownbloc :visited:hover { 
+      background-color: #eee; 
+      color: #555 
+   }
+
+   div.markdownbloc p{
+      margin:0.5em 0;
+   }
+   div.markdownbloc a{
+      
+   }
+   div.markdownbloc pre{
+      font-family: Monaco, courrier, sans-serif;
+      font-size: 8pt;
+      border: 1px solid #ccc;      
+      margin-right:15px;
+      padding:10px;
+      background-color:#fefefe;
+   }
+   div.markdownbloc ul {
+      margin:5px 0;
+      padding:2px 0 2px 20px;
+   }
+   div.markdownbloc ul li{
+      list-style: square outside;
+      
+   }
+   div.markdownbloc ol{
+      margin:5px 0;
+      padding:2px 0 2px 20px;
+   }
+   div.markdownbloc ol li{
+      list-style-type: decimal;
+   }   
+   div.markdownbloc ol li p, div.markdownbloc ul li p{
+      margin:0.4em 0;
+   }   
+   div.markdownbloc blockquote{
+      font-family: times, serif;
+      font-size:1.3em;
+      font-style: italic;
+   }
+   
+   /*******************************************/
+   /* Boutons                                  /
+   /*******************************************/
+   
+   /* Btn forms */
+   .btn { display: block; position: relative; background: #aaa; padding: 5px; float: right; color: #fff; text-decoration: none; cursor: pointer; }
+   .btn * { font-style: normal; background-image: url(../images/btn2.png); background-repeat: no-repeat; display: block; position: relative; }
+   .btn i { background-position: top left; position: absolute; margin-bottom: -5px; top: 0; left: 0; width: 5px; height: 5px; }
+   .btn span { background-position: bottom left; left: -5px; padding: 0 0 5px 10px; margin-bottom: -5px; }
+   .btn span i { background-position: bottom right; margin-bottom: 0; position: absolute; left: 100%; width: 10px; height: 100%; top: 0; }
+   .btn span span { background-position: top right; position: absolute; right: -10px; margin-left: 10px; top: -5px; height: 0; }
+   /* IE Hack */
+   * html .btn span, * html .btn i { float: left; width: auto; background-image: none; cursor: pointer; }
+
+   .btn.pink { background: #ff45b3; }
+   * html .btn.pink { border-color: #ff45b3; }
+   .btn[class] {  background-image: url(../images/shade.png); background-position: bottom; }
+   .btn:hover { background-color: #e1a; }
+   form p .btn{
+      margin:8px 0 2px 6px;
+   }  
+   
+   
+   

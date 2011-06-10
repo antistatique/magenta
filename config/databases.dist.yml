@@ -1,0 +1,17 @@
+dev:
+  propel:
+    param:
+      classname:  DebugPDO
+      dsn:        mysql:dbname=your_db_name;host=localhost
+      
+all:
+  propel:
+    class:        sfPropelDatabase
+    param:
+      classname:  PropelPDO
+      dsn: mysql:dbname=your_db_name;host=localhost
+      username: your_username
+      password: your_password
+      encoding:   utf8
+      persistent: true
+      pooling:    true

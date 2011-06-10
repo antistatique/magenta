@@ -1,0 +1,21 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Magenta - Antistatique.net Sàrl
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    robots:       index, follow
+
+  stylesheets:    []
+
+  javascripts:    [jquery, magenta, jquery.corners.js, jquery.livequery.js, jquery.form.js, applesearch]
+
+  has_layout:     true
+  layout:         layout
+
+  components:
+    submenu_module:  []
+ 

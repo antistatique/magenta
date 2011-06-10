@@ -1,0 +1,14 @@
+all:
+  stylesheets:    [main]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
+
+  components:
+    submenu_module:  [trac, submenu]
+
+subMenuSuccess:
+  has_layout:     false
+  

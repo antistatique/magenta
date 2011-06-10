@@ -1,0 +1,71 @@
+TypeCompany:
+    client:
+      id: client
+      name: Client
+    partenaire:
+      id: partenaire
+      name: Partenaire
+    fournisseur:
+      id: fournisseur
+      name: Fournisseur
+    contact:
+      id: contact
+      name: Contact
+########
+StatusProject:
+  prospection:
+    name:   Prospection
+    position:  110
+  en_cours_offre:
+    name:   En cours d'offre
+    position:  120  
+  offre_envoyee:
+    name:   Offre envoyée
+    position:  130
+  en_cours_cdc:
+    name:   En cours de CDC 
+    position:  140
+  cdc_signe:
+    name:   CDC signé 
+    position:  150
+  en_cours_realisation:
+    name:   En réalisation
+    position:  160
+  finitions:
+    name:   Finitions
+    position:  170
+  facture:
+    name:   Facturé
+    position:  180
+  archive:
+    name:   Archivé
+    position:  200                                                               
+  offre_non_retenue:
+    name:   Offre non retenue 
+    position:  310
+  cdc_non_signe:
+    name:   CDC non signé 
+    position:  320
+  arret_inopine:
+    name:   Arrêt inopiné 
+    position:  330
+  annule:
+    name:   Annulé
+    position:  340
+#########
+FunctionProjectEmployee:
+  project_manager:
+    id:                    project_manager
+    name:                  Chef de projet
+  collaborator:
+    id:                    collaborator
+    name:                  Contact client
+  devel:
+    id:                    developer
+    name:                  Développeur
+  graphiste:
+    id:                    graphist
+    name:                  Graphiste
+  external:
+    id:                    external
+    name:                  Externe

@@ -1,0 +1,12 @@
+Workflow:
+  ## Workflow pour template
+  template_creat_mandat:
+    title:  Création du mandat
+    description: Création du mandat dans le logiciel Magenta
+    author_id: default_author_id
+    manager_id: default_author_id
+    status_name: done
+    type_workflow: system
+    category_workflow_id:  administratif
+    project_id: default_project_id
+    planned_date: default_updated_date

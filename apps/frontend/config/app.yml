@@ -1,0 +1,19 @@
+# default values
+all:
+  contact:
+    max_per_page: 14
+  project:
+    max_per_page: 20
+  employee:
+    max_per_page: 10
+    
+  sf_guard_plugin:
+    profile_class: Employee
+    profile_field_name: sf_guard_user_id
+    remember_key_expiration_age:  2592000   # 30 days in seconds
+    remember_cookie_name:         magentaRememberMe
+
+  magenta:
+    version : 0.7
+    appname: "Magenta - Antistatique.net Sàrl"
+    trac_ticket: "https://github.com/antistatique/magenta/issues"

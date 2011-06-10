@@ -1,0 +1,13 @@
+all:
+  stylesheets:    [main]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
+
+  components:
+    submenu_module:  [contact, submenu]
+dev:
+  stylesheets:    [blackbird]
+  javascripts:    [blackbird]

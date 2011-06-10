@@ -1,0 +1,51 @@
+# Security management for the contact module ...
+# 3 types of users :
+# - "admin" for the administrator whose having all the rights
+# - "icollab" for the internal collaborators whose having most of the rights (except deleting)
+# - "ecollab" for the external collaborators whose have access to the informations for the project is working on.
+# - "can_admin_contact"
+# - "can_contact_modify"
+# - "can_contact_view"
+# - "can_contact_view_all"
+
+all:
+  is_secure: true
+  credentials: admin
+  
+# related to the list and show actions
+index:
+  credentials: [[ admin, icollab, ecollab]]
+list:
+  credentials: [[ admin, icollab, ecollab]]
+detail:
+  credentials: [[ admin, icollab, ecollab]]
+search:
+  credentials: [[ admin, icollab, ecollab]]
+
+exportVcardCompany:
+  credentials: [[ admin, icollab, ecollab]]
+
+exportAllContact:
+  credentials: [[ admin, icollab]]
+  
+# related to company editing actions
+addCompany:
+  credentials: [[can_admin_contact, can_contact_modify]]
+editCompany:
+  credentials: [[can_admin_contact, can_contact_modify]]
+updateCompany:
+  credentials: [[can_admin_contact, can_contact_modify]]
+deleteCompany:
+  credentials: can_admin_contact
+
+# related to contact editing actions
+addContact:
+  credentials: [[can_admin_contact, can_contact_modify]]
+editContact:
+  credentials: [[can_admin_contact, can_contact_modify]]
+updateContact:
+  credentials: [[can_admin_contact, can_contact_modify]]
+importVcard:
+  credentials: [[can_admin_contact, can_contact_modify]]
+deleteContact:
+  credentials: can_admin_contact  

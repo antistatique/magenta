@@ -1,0 +1,98 @@
+html{
+	margin:0;
+	padding:0;
+}
+body{
+	height:100%;
+	margin:0;
+	padding:0;
+	background-color:#FFFFFF;
+	font: 8pt Tahoma, Verdana, sans-serif;			
+}
+h1{
+	display:none;
+}
+a{
+   color:#666;
+}
+#content{
+	position:absolute;
+    left: 50%; 
+    top: 50%;			
+	background: #FFFFFF url('../images/login_magenta_logo.gif') 0 0 no-repeat;
+	width:472px;
+	height:320px;
+	margin:-160px 0 0 -236px;
+	padding:206px 0 0 217px;
+}
+#content.blanktitle{
+	background-image: url('../images/magenta_logo.gif');
+}
+#login{
+	background-color:#f7f7f7;
+	width:245px;
+	padding:5px 5px 5px 5px;
+}
+#login form{
+	margin:0;
+}
+#login input.fields{
+	width:245px;
+	height:20px;
+	border:1px #d1d1d1 solid;
+	font: 12pt Tahoma, Verdana, sans-serif;
+	margin:2px 0 2px 0;
+}
+#login input.remember{
+   float:left;
+   margin-top:10px;
+}
+#login input.btn{
+
+}
+#login p{
+	clear:both;
+	margin:0 0 0 0;
+	padding:0 0 35px 0;
+}
+#login h2{
+   color:#666;
+}
+
+#login_error{
+      margin:0;
+      width:250px;
+      height:28px;/*40*/
+      padding:1px 0 11px 0;
+      color:white;
+      font: 13px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+      background-image: url('../images/display_message.png');
+      background-position: 0 -80px;
+      background-repeat: no-repeat;
+}
+
+#login_error h2{
+   padding: 0;
+   font-size: 10pt;
+   font-weight: normal;
+   margin-left: 50px;   
+}
+
+
+/* Btn forms */
+.btn { display: block; position: relative; background: #aaa; padding: 5px; float: right; color: #fff; text-decoration: none; cursor: pointer; }
+.btn * { font-style: normal; background-image: url(../images/btn2.png); background-repeat: no-repeat; display: block; position: relative; }
+.btn i { background-position: top left; position: absolute; margin-bottom: -5px; top: 0; left: 0; width: 5px; height: 5px; }
+.btn span { background-position: bottom left; left: -5px; padding: 0 0 5px 10px; margin-bottom: -5px; }
+.btn span i { background-position: bottom right; margin-bottom: 0; position: absolute; left: 100%; width: 10px; height: 100%; top: 0; }
+.btn span span { background-position: top right; position: absolute; right: -10px; margin-left: 10px; top: -5px; height: 0; }
+/* IE Hack */
+* html .btn span, * html .btn i { float: left; width: auto; background-image: none; cursor: pointer; }
+
+.btn.pink { background: #ff45b3; }
+* html .btn.pink { border-color: #ff45b3; }
+.btn[class] {  background-image: url(../images/shade.png); background-position: bottom; }
+.btn:hover { background-color: #e1a; }
+form p .btn{
+	margin:8px 0 2px 6px;
+}

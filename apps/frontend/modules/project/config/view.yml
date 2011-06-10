@@ -1,0 +1,23 @@
+all:
+  stylesheets:    [main, markitup, markdown]
+
+  javascripts:    [jquery.markitup.js, jquery.markitup.pack.js, markitup.set.js]
+
+  has_layout:     true
+  layout:         layout
+
+  components:
+    submenu_module:  [project, submenu]
+
+showSuccess:
+  javascripts:    [jquery-ui.js, i18n/jquery-ui-i18n.js] # need this to workflow loaded in ajax
+  stylesheets:    [magenta/jquery-ui.css]
+
+editWorkflowSuccess:
+  javascripts:    [jquery-ui.js, i18n/jquery-ui-i18n.js]
+  stylesheets:    [magenta/jquery-ui.css]
+ 
+previewSucess:
+  has_layout:     off
+  stylesheets:    [main, markitup, markdown]   
+   

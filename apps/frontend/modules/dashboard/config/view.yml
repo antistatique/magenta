@@ -1,0 +1,12 @@
+all:
+  stylesheets:    [main]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
+
+  components:
+    submenu_module:  [dashboard, submenu]
+
+

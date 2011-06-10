@@ -1,0 +1,154 @@
+# default rules
+homepage:
+  url:   /
+  param: { module: dashboard, action: index }
+
+# sf_guard rules
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+  
+  
+#magenta
+contact:
+  url:   /contact
+  param: { module: contact, action: index }
+  
+# list_contact:
+#   url:  /contact/list/*
+#   param:{ module: contact, action:list}
+
+
+edit_contact:
+  url:   /contact/edit/*
+  param: { module: contact, action: editContact }
+  
+add_contact:
+  url:   /contact/add/*
+  param: { module: contact, action: addContact }
+  
+delete_contact:
+  url:   /contact/delete/*
+  param: { module: contact, action: deleteContact }
+  
+search_company:
+  url: /company/search/*
+  param: {module:contact, action: search }
+  
+edit_company:
+  url:   /company/edit/*
+  param: { module: contact, action: editCompany }
+
+add_company:
+  url:  /company/add/*
+  param: { module: contact, action: addCompany}
+
+delete_company:
+  url:   /company/delete/*
+  param: { module: contact, action: deleteCompany }
+
+detail_company:
+  url:   /company/detail/:id
+  param: { module: contact, action: detail }
+
+export_all_company:
+  url:  /company/exportAll
+  param: {module:contact, action:exportAllContact}
+  
+project:
+  url:   /project
+  param: { module: project, action: index }
+
+add_project:
+  url:  /project/add/*
+  param: { module: project, action: edit }
+list_project:
+  url:  /project/list/*
+  param: { module: project, action: list }
+detail_project:
+  url:  /project/detail/*
+  param: { module: project, action: detail }
+edit_project:
+  url:  /project/edit/:id
+  param: { module: project, action: edit }  
+show_project:
+  url:  /project/show/*
+  param: { module: project, action: show }  
+delete_project:
+  url:  /project/delete/*
+  param: { module: project, action: delete }  
+  
+search_project:
+  url:  /project/search/*
+  param: { module: project, action: search }  
+  
+edit_project_employee:
+  url: /project/editemployee/:id
+  param: {module: project, action: editProjectEmployee }  
+
+change_status_project:
+   url: /project/changestatus/:project_id
+   param: {module: project, action: changeStatusProject }   
+
+### Workflows
+edit_workflow:
+  url: /workflow/edit/:id
+  param: { module: workflow, action: edit }
+add_workflow:
+  url: /workflow/add/project_id/:project_id
+  param: { module: workflow, action: edit }
+delete_workflow:
+  url: /workflow/delete/:id
+  param: { module: workflow, action: delete }
+taskasdone_project:
+  url: /workflow/taskasdone/:id
+  param: { module: workflow, action: taskAsDone }  
+  
+### Employees
+employee:
+  url:   /employee
+  param: { module: employee, action: index }
+
+detail_employee:
+  url:   /employee/detail/*
+  param: { module: employee, action: detail }
+
+dashboard:
+  url:   /dashboard
+  param: { module: dashboard, action: index }
+
+dashboard_employee:
+  url:   /dashboard/:username
+  param:  { module: dashboard, action: index, username: null }
+
+workflow:
+  url:   /workflow
+  param: { module: workflow, action: index }
+
+trac:
+  url:   /trac
+  param: { module: trac, action: index }
+
+search:
+  url:   /search/*
+  param: { module: dashboard, action: search }
+
+
+default_symfony:
+  url:   /symfony/:action/*
+  param: { module: default }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

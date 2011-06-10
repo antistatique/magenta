@@ -1,0 +1,128 @@
+propel:
+  project:
+    id:
+    slug:                  varchar(255)
+    title:                 varchar(255)
+    number:                integer
+    description:           longvarchar
+    trac_link:             varchar(255)    
+    type_project:          longvarchar
+    created_at:            false
+    updated_at:            false
+    status_project_id:   { type: integer, foreignTable: status_project, foreignReference: id }
+    
+  status_project:
+    id:
+    name:                  varchar(255)
+    position:              integer
+    
+  extra_field_project:
+    id:
+    name:                  varchar(255)
+    value_extra:           integer
+    project_id:          { type: integer, foreignTable: project, foreignReference: id }
+    
+  project_employee:
+    project_id:          { type: integer, foreignTable: project, foreignReference: id, primaryKey: true, onDelete: cascade}
+    employee_id:         { type: integer, foreignTable: employee, foreignReference: id, primaryKey: true }
+    function_project_employee_id: { type: varchar(255), foreignTable: function_project_employee, foreignReference: id }
+    
+  function_project_employee:
+    id:                  { type: varchar(255), autoIncrement: false, primaryKey: true }
+    name:                  varchar(255)  
+    
+  employee:
+    id:
+    title:                 varchar(255)
+    name:                  varchar(255)
+    firstname:             varchar(255)
+    email:                 varchar(255)
+    tel:                   varchar(255)
+    fax:                   varchar(255)
+    mobile:                varchar(255)
+    url:                   varchar(255)
+    im:                    varchar(255)
+    address:               varchar(255)
+    zipcode:               varchar(16)
+    city:                  varchar(255)
+    country:               varchar(255)
+    updated_at:            false
+    created_at:            false
+    function_employee_id: { type: varchar(255), foreignTable: function_employee, foreignReference: id }
+    sf_guard_user_id:    { type: integer, foreignTable: sf_guard_user, foreignReference: id }
+    
+  extra_field_employee:
+    id:
+    name:                  varchar(255)
+    value_extra:           integer
+    employee_id:         { type: integer, foreignTable: employee, foreignReference: id }
+    
+  function_employee:
+    id:                  { type: varchar(255), autoIncrement: false, primaryKey: true }
+    name:                  varchar(255)
+    
+  project_company:
+    company_id:          { type: integer, foreignTable: company, foreignReference: id, primaryKey: true }
+    project_id:          { type: integer, foreignTable: project, foreignReference: id, primaryKey: true, onDelete: cascade}
+    contact_id:         { type: integer, foreignTable: contact, foreignReference: id }
+  company:
+    id:
+    name:                  varchar(255)
+    street:                varchar(255)
+    street_number:         varchar(16)
+    zipcode:               varchar(16)
+    city:                  varchar(255)
+    country:               varchar(255)
+    url:                   varchar(255)
+    tel:                   varchar(255)
+    email:                 varchar(255)
+    updated_at:            false
+    created_at:            false
+    type_company_id:     { type: varchar(255), foreignTable: type_company, foreignReference: id }
+    employee_id:         { type: integer, foreignTable: employee, foreignReference: id}
+  type_company:
+    id:                    { type: varchar(255), autoIncrement: false, primaryKey: true }
+    name:                  varchar(255)
+  contact:
+    id:
+    title:                 varchar(255)
+    name:                  varchar(255)
+    firstname:             varchar(255)
+    function_name:         varchar(255)
+    email:                 varchar(255)
+    tel:                   varchar(255)
+    fax:                   varchar(255)
+    mobile:                varchar(255)
+    url:                   varchar(255)
+    im:                    varchar(255)
+    address:               varchar(255)
+    zipcode:               varchar(16)
+    city:                  varchar(255)
+    country:               varchar(255)
+    updated_at:            false
+    created_at:            false
+    company_id:          { type: integer, foreignTable: company, foreignReference: id }
+    comment:               longvarchar
+  extra_field_contact:
+    id:
+    name:                  varchar(255)
+    value_extra:           integer
+    contact_id:         { type: integer, foreignTable: contact, foreignReference: id }
+  workflow:
+    id:
+    title:                 varchar(255)
+    description:           longvarchar
+    planned_date:          timestamp
+    effective_date:        { type: timestamp, required: false } # date when task marked as done
+    show_date:             { type: date, required: false } # if set, date when task need to be showed in timeline
+    status_name:           varchar(255)
+    type_workflow:         varchar(255)
+    updated_at:            false
+    created_at:            false    
+    author_id:           { type: integer, foreignTable: employee, foreignReference: id }
+    manager_id:          { type: integer, foreignTable: employee, foreignReference: id }
+    category_workflow_id: { type: varchar(255), foreignTable: category_workflow, foreignReference: id }
+    project_id:          { type: integer, foreignTable: project, foreignReference: id , onDelete: cascade}
+  category_workflow:
+    id:                  { type: varchar(255), autoIncrement: false, primaryKey: true }
+    name:                  varchar(255)    

@@ -1,0 +1,7 @@
+all:
+  stylesheets:    [login]
+
+  javascripts:    [jquery, magenta]
+
+  has_layout:     false
+

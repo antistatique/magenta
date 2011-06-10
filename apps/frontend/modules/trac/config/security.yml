@@ -1,0 +1,17 @@
+# Security management for the contact module ...
+# 3 types of users :
+# - "admin" for the administrator whose having all the rights
+# - "icollab" for the internal collaborators whose having most of the rights (except deleting)
+# - "ecollab" for the external collaborators whose have access to the informations for the project is working on.
+
+
+all:
+  is_secure: true
+  credentials: admin
+  
+index:
+  credentials: [[ admin, icollab]]
+list:
+  credentials: [[ admin, icollab]]
+subMenu:
+  credentials: [[ admin, icollab]]

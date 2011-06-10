@@ -1,0 +1,5 @@
+all:
+  stylesheets: [main]
+  
+  components:
+    submenu_module: [employee, submenu]
