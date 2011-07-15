@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-
 <?php include_http_metas() ?>
 <?php include_metas() ?>
 
@@ -23,21 +22,21 @@ endif;
          <div id="logo">
             <?php echo link_to(image_tag('/images/contenu_magenta_logo.gif'),'@homepage')?>
          </div>
-         
+
         <?php include_partial('global/menu') ?>
         <?php include_component_slot('submenu_module') ?>
-        
+
         <div id="session_bloc"<?php echo $sf_user->hasFlash('signin') ? ' class="just_signed"' : ''; ?>>
           Bienvenue <?php echo $sf_user->getGuardUser()->getUsername() ?><br/>
           <a href="<?php echo url_for('@sf_guard_signout');?>" id="signout_link">déconnexion</a>
         </div>
-        
+
         <?php $type = $sf_request->hasAttribute('message_type') ? $sf_request->getAttribute('message_type') : $sf_user->getFlash('message_type', '') ?>
-        <?php $message = $sf_request->hasAttribute('message') ? $sf_request->getAttribute('message') : $sf_user->getFlash('message', '') ?>        
+        <?php $message = $sf_request->hasAttribute('message') ? $sf_request->getAttribute('message') : $sf_user->getFlash('message', '') ?>
          <div id="message" <?php echo $type ? 'class="actived '.$type.'"' : ''; ?> >
            <h2><?php echo $message ?></h2>
          </div>
-         
+
       </div><!--end header-->
       <div id="contenu">
             <?php echo $sf_data->getRaw('sf_content') ?>
@@ -50,7 +49,7 @@ endif;
             </div>
          </div>
       </div><!--end contenu-->
-      
+
 
    </div><!--end centreur-->
 

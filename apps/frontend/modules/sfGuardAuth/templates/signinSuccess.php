@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-
 <?php include_http_metas() ?>
 <?php include_metas() ?>
 
@@ -23,9 +22,9 @@
 
     <p>
       <?php echo $form['username']->render(array('class' => 'fields')) ?>
-     
+
       <?php echo $form['password']->render(array('class' => 'fields')) ?>
-      
+
       <?php echo $form['remember']->render(array('class' => 'remember')) ?>
 
       <input id="submit_btn" type="submit" value="Valider" class="btn pink"/>
