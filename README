@@ -1,1 +1,10 @@
-Projet Magenta
+Project Magenta
+===============
+
+Installation
+------------
+
+- Clone the repository.
+- Run `bin/vendors install` to get the dependencies.
+- Copy `config/databases.dist.yml` to `config/databases.yml` and edit the `dsn`s, `username` and 
+  `password` to match your DB config.
