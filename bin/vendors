@@ -11,7 +11,7 @@
  */
 
 $rootDir = dirname(__DIR__);
-$vendorDir = $rootDir.'/lib';
+$vendorDir = $rootDir.'/lib/vendor';
 
 array_shift($argv);
 if (!isset($argv[0])) {
@@ -60,6 +60,13 @@ foreach ($deps as $name => $dep) {
 
     // install dir
     $installDir = isset($dep['target']) ? $vendorDir.'/'.$dep['target'] : $vendorDir.'/'.$name;
+    if (in_array('--reinstall', $argv)) {
+        if (PHP_OS == 'WINNT') {
+            system(sprintf('rmdir /S /Q %s', escapeshellarg(realpath($installDir))));
+        } else {
+            system(sprintf('rm -rf %s', escapeshellarg($installDir)));
+        }
+    }
 
     echo "> Installing/Updating $name\n";
 
