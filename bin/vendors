@@ -11,7 +11,7 @@
  */
 
 $rootDir = dirname(__DIR__);
-$vendorDir = $rootDir.'/lib/vendor';
+$vendorDir = $rootDir;
 
 array_shift($argv);
 if (!isset($argv[0])) {
@@ -58,8 +58,12 @@ foreach ($deps as $name => $dep) {
         $rev = isset($dep['version']) ? $dep['version'] : false;
     }
 
+    if (!isset($dep['path'])) {
+        exit(sprintf('The "path" value for the "%s" dependency must be set.', $name));
+    }
+
     // install dir
-    $installDir = isset($dep['target']) ? $vendorDir.'/'.$dep['target'] : $vendorDir.'/'.$name;
+    $installDir = isset($dep['target']) ? $vendorDir.'/'.$dep['path'].'/'.$dep['target'] : $vendorDir.'/'.$dep['path'].'/'.$name;
     if (in_array('--reinstall', $argv)) {
         if (PHP_OS == 'WINNT') {
             system(sprintf('rmdir /S /Q %s', escapeshellarg(realpath($installDir))));
