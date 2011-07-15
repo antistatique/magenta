@@ -1,0 +1,8 @@
+[symfony]
+    svn=http://svn.symfony-project.com/tags/RELEASE_1_3_11/
+
+[sfTaskExtraPlugin]
+    svn=http://svn.symfony-project.org/plugins/sfTaskExtraPlugin/branches/1.3/
+
+[sfGuardPlugin]
+    svn=http://svn.symfony-project.org/plugins/sfGuardPlugin/branches/1.3/
