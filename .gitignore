@@ -3,3 +3,5 @@ plugins/
 cache/
 config/databases.yml
 log/
+lib/model/map/
+lib/model/om/
