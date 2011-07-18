@@ -5,3 +5,6 @@ config/databases.yml
 log/
 lib/model/map/
 lib/model/om/
+data/sql/
+lib/filter/base/
+lib/form/base/
