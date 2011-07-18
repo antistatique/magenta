@@ -11,61 +11,63 @@ TypeCompany:
     contact:
       id: contact
       name: Contact
-########
+
+
 StatusProject:
   prospection:
-    name:   Prospection
+    name:   Lead
     position:  110
   en_cours_offre:
-    name:   En cours d'offre
+    name:   Offer In Progress
     position:  120  
   offre_envoyee:
-    name:   Offre envoyée
+    name:   Offer Sent
     position:  130
   en_cours_cdc:
-    name:   En cours de CDC 
+    name:   Contract In Progress
     position:  140
   cdc_signe:
-    name:   CDC signé 
+    name:   Contract Signed
     position:  150
   en_cours_realisation:
-    name:   En réalisation
+    name:   Work In Progress
     position:  160
   finitions:
-    name:   Finitions
+    name:   Polishing
     position:  170
   facture:
-    name:   Facturé
+    name:   Invoice Sent
     position:  180
   archive:
-    name:   Archivé
-    position:  200                                                               
+    name:   Archived
+    position:  200
   offre_non_retenue:
-    name:   Offre non retenue 
+    name:   Offer Rejected 
     position:  310
   cdc_non_signe:
-    name:   CDC non signé 
+    name:   Contract Rejected
     position:  320
   arret_inopine:
-    name:   Arrêt inopiné 
+    name:   Unexpected Stop
     position:  330
   annule:
-    name:   Annulé
+    name:   Canceled
     position:  340
-#########
+
+
 FunctionProjectEmployee:
   project_manager:
     id:                    project_manager
-    name:                  Chef de projet
+    name:                  Project Lead
   collaborator:
     id:                    collaborator
-    name:                  Contact client
+    name:                  Client
   devel:
     id:                    developer
-    name:                  Développeur
+    name:                  Developer
   graphiste:
     id:                    graphist
-    name:                  Graphiste
+    name:                  Designer
   external:
     id:                    external
-    name:                  Externe
+    name:                  External

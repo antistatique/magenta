@@ -5,6 +5,7 @@ sfGuardPermission:
   ecollab:
     name:           ecollab
     description:    External collaborators
+
   can_admin_contact:
     name:           can_admin_contact
     description:    can admin all the contact
@@ -17,6 +18,7 @@ sfGuardPermission:
   can_contact_view_all:
     name:           can_contact_view_all
     description:    can view all contact
+
   can_admin_project:
     name:           can_admin_project
     description:    can admin all projects
@@ -29,7 +31,7 @@ sfGuardPermission:
   can_project_view_all:
     name:           can_project_view_all
     description:    can view all project 
-    
+
   can_workflow_modify:
     name:           can_workflow_modify
     description:    can edit workflow
@@ -39,17 +41,16 @@ sfGuardPermission:
   can_workflow_set_as_done:
     name:           can_workflow_set_as_done
     description:    can set workflow status as done
-           
 
-    
-    
+
 sfGuardGroup:
   icollab:
     name:           icollab
     description:    Internal collaborators group
   ecollab:
     name:           ecollab
-    description:    External collaborators group    
+    description:    External collaborators group
+
 
 sfGuardGroupPermission:
   icollab:
@@ -58,6 +59,7 @@ sfGuardGroupPermission:
   ecollab:
     group_id:       ecollab
     permission_id:  ecollab
+
   linkcan_admin_contact:
     group_id:       admin
     permission_id:  can_admin_contact
@@ -70,6 +72,7 @@ sfGuardGroupPermission:
   linkcan_contact_view:
     group_id:       icollab
     permission_id:  can_contact_view
+
   linkcan_admin_project:
     group_id:       admin
     permission_id:  can_admin_project
@@ -91,7 +94,7 @@ sfGuardGroupPermission:
   linkcan_project_view_all:
     group_id:       icollab
     permission_id:  can_project_view_all
-    
+
   linkcan_workflow_modify:
     group_id:       icollab
     permission_id:  can_workflow_modify
@@ -102,24 +105,25 @@ sfGuardGroupPermission:
     group_id:       ecollab
     permission_id:  can_workflow_set_as_done
 
+
 FunctionEmployee:
   icollaborateur:
     id:                    collaborator_intern
-    name:                  Collaborateur Interne
+    name:                  Internal Collaborator
   ecollaborateur:
     id:                    collaborator_extern
-    name:                  Collaborateur Externe    
+    name:                  External Collaborator
   admin_type:
     id:                    admin_type
-    name:                  Administrateur        
+    name:                  Administrator
 
-#
+
 Employee:
   admini:
-    title:                 Monsieur
-    name:                  Administrateur
-    firstname:             L'
-    email:                 hello@antistatique.net
+    title:                 Dr.
+    name:                  Tyrol
+    firstname:             Chief
+    email:                 example@example.org
     tel:                   +41 76 123 45 67
     fax:                   
     mobile:                +41 76 123 45 67
