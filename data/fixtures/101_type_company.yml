@@ -4,10 +4,10 @@ TypeCompany:
       name: Client
     partenaire:
       id: partenaire
-      name: Partenaire
+      name: Partner
     fournisseur:
       id: fournisseur
-      name: Fournisseur
+      name: Service Provider
     contact:
       id: contact
       name: Contact
