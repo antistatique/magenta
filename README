@@ -13,6 +13,8 @@ Installation
     ./symfony propel:build-model
     ./symfony propel:build-forms
     ./symfony propel:build-filters
+    ./symfony propel:build-sql
+    sed -i='' 's/Type=InnoDB/Engine=InnoDB/g' data/sql/*.sql
     ./symfony propel:insert-sql
     ./symfony propel:data-load
 
