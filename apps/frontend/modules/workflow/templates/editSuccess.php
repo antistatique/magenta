@@ -1,12 +1,12 @@
+<?php $workflow = $form->getObject() ?>
 <?php if(!$sf_request->isXmlHttpRequest()):?>
-<?php slot('page_title', sprintf("%s un workflow pour \"%s\"", ($form->isNew() ? 'Ajouter':'Editer'), $project)); ?>
+<?php slot('page_title', sprintf("%s un workflow pour \"%s\"", ($form->isNew() ? 'Ajouter':'Editer'), $workflow->getProject())); ?>
 
 <div id="label">
   <?php include_component('project', 'statusProject') ?>
 </div><!--end label-->
 <div id="detail" class="detailmandat">
 <?php endif;?>
-<?php $workflow = $form->getObject() ?>
 <div id="detailcontent_p" class="detailcontent">
 <h2 class="titre"><?php echo $workflow->isNew() ? 'Nouveau' : 'Editer un' ?> Workflow</h2>
   <span class="itemfade"><?php echo isset($project) ? $project : $workflow->getProject(); ?></span><br/>
